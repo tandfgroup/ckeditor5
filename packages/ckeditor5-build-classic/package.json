@@ -1,6 +1,6 @@
 {
   "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "30.0.0",
+  "version": "30.0.3",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -36,6 +36,7 @@
     "@ckeditor/ckeditor5-editor-classic": "^30.0.0",
     "@ckeditor/ckeditor5-essentials": "^30.0.0",
     "@ckeditor/ckeditor5-heading": "^30.0.0",
+    "@ckeditor/ckeditor5-html-support": "^30.0.0",
     "@ckeditor/ckeditor5-image": "^30.0.0",
     "@ckeditor/ckeditor5-indent": "^30.0.0",
     "@ckeditor/ckeditor5-link": "^30.0.0",
@@ -43,8 +44,10 @@
     "@ckeditor/ckeditor5-media-embed": "^30.0.0",
     "@ckeditor/ckeditor5-paragraph": "^30.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^30.0.0",
+    "@ckeditor/ckeditor5-source-editing": "^30.0.0",
     "@ckeditor/ckeditor5-table": "^30.0.0",
-    "@ckeditor/ckeditor5-typing": "^30.0.0"
+    "@ckeditor/ckeditor5-typing": "^30.0.0",
+    "@ckeditor/ckeditor5-word-count": "^30.0.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^30.0.0",
@@ -62,13 +65,13 @@
     "node": ">=12.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "Platformcore",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "homepage": "https://github.com/tandfgroup/ckeditor5/tree/stable",
+  "bugs": "https://github.com/tandfgroup/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "https://github.com/tandfgroup/ckeditor5.git",
     "directory": "packages/ckeditor5-build-classic"
   },
   "scripts": {
