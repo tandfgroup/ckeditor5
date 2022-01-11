@@ -30,8 +30,11 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
+import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -58,7 +61,10 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	WordCount,
+	GeneralHtmlSupport,
+	SourceEditing
 ];
 
 // Editor configuration.
@@ -76,12 +82,21 @@ ClassicEditor.defaultConfig = {
 			'outdent',
 			'indent',
 			'|',
-			'uploadImage',
 			'blockQuote',
 			'insertTable',
-			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'sourceEditing'
+		]
+	},
+	htmlSupport: {
+		allow: [
+			{
+				name: /^(div|span)$/,
+				attributes: true,
+				classes: true,
+				styles: true
+			}
 		]
 	},
 	image: {
